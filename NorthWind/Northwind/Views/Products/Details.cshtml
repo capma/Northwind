@@ -1,0 +1,57 @@
+﻿@model Northwind.Models.Product
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Product - Details</h2>
+
+<form class="form-horizontal" role="form">
+    <div class="form-group">
+        <label class="text-right col-sm-2" for="labelProductName">@Html.DisplayNameFor(m=>m.ProductName)</label>
+        <div class="col-sm-10" >@Html.DisplayTextFor(m=>m.ProductName)</div>
+    </div>
+    <div class="form-group">
+        <label class="text-right col-sm-2" for="labelProductName">@Html.DisplayNameFor(m => m.QuantityPerUnit)</label>
+        <div class="col-sm-10">@Html.DisplayTextFor(m => m.QuantityPerUnit)</div>
+    </div>
+    <div class="form-group">
+        <label class="text-right col-sm-2" for="labelProductName">@Html.DisplayNameFor(m => m.UnitPrice)</label>
+        <div class="col-sm-10">@Html.DisplayTextFor(m => m.UnitPrice)</div>
+    </div>
+    <div class="form-group">
+        <label class="text-right col-sm-2" for="labelProductName">@Html.DisplayNameFor(m => m.UnitsInStock)</label>
+        <div class="col-sm-10">@Html.DisplayTextFor(m => m.UnitsInStock)</div>
+    </div>
+    <div class="form-group">
+        <label class="text-right col-sm-2" for="labelProductName">@Html.DisplayNameFor(m => m.UnitsOnOrder)</label>
+        <div class="col-sm-10">@Html.DisplayTextFor(m => m.UnitsOnOrder)</div>
+    </div>
+    <div class="form-group">
+        <label class="text-right col-sm-2" for="labelProductName">@Html.DisplayNameFor(m => m.ReorderLevel)</label>
+        <div class="col-sm-10">@Html.DisplayTextFor(m => m.ReorderLevel)</div>
+    </div>
+    <div class="form-group">
+        <label class="text-right col-sm-2" for="labelProductName">@Html.DisplayNameFor(m => m.Discontinued)</label>
+        <div class="col-sm-10">@Html.DisplayTextFor(m => m.Discontinued)</div>
+    </div>
+    <div class="form-group">
+        <label class="text-right col-sm-2" for="labelProductName">@Html.DisplayNameFor(m => m.Category)</label>
+        <div class="col-sm-10">@Html.DisplayTextFor(m => m.Category.CategoryName)</div>
+    </div>
+    <div class="form-group">
+        <label class="text-right col-sm-2" for="labelProductName">@Html.DisplayNameFor(m => m.Order_Details)</label>
+        <div class="col-sm-10">View Order_Details</div>
+    </div>
+    <div class="form-group">
+        <label class="text-right col-sm-2" for="labelProductName">@Html.DisplayNameFor(m => m.Supplier)</label>
+        <div class="col-sm-10">@Html.DisplayTextFor(m => m.Supplier.CompanyName)</div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+    </div>
+</form>
